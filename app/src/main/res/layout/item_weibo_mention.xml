@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/layout_status_header"/>
+    <LinearLayout
+        android:background="@color/cw_bg"
+        android:id="@+id/llStatus"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/space_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivMentioned"
+            android:layout_width="@dimen/avatar_size_xl"
+            android:layout_height="@dimen/avatar_size_xl"
+            android:src="@mipmap/ic_place_holder"/>
+
+        <LinearLayout
+            android:background="@color/cw_bg"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:background="@color/cw_bg"
+                android:text="@string/empty_string"
+                style="@style/tv_m_black_sl"
+                android:padding="@dimen/space_s"
+                android:id="@+id/tvMentionedName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:background="@color/cw_bg"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/space_s"
+                android:singleLine="false"
+                android:text="@string/empty_string"
+                style="@style/tv_s_grey_sl"
+                android:id="@+id/tvReContent"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.xiaoming.cweibo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 用于调用 JNI -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:label="@string/lbl_home"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:name=".activity.HomePageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.simple"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LanddingPageActivity"
+                  android:screenOrientation="portrait" android:label="@string/lbl_landing"
+                  android:theme="@style/AppTheme.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.RepostActivity"
+                  android:label="@string/lbl_repost"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.simple"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.CommentsActivity"
+                  android:label="@string/lbl_comment"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.simple"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.PhotoViewActivity"
+                  android:theme="@style/AppTheme.NoActionBar.FullScreen"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.simple"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ArticleCommentActivity"
+                  android:label="@string/lbl_comment"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.simple"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MentionActivity"
+                  android:label="@string/at_me"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.simple"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.CommentActivity"
+                  android:label="@string/lbl_comment"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.simple"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.CollectActivity"
+                  android:label="@string/at_me"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.simple"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.FansActivity"
+                  android:label="@string/lbl_my_fans"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.simple"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AttentionActivity"
+                  android:label="@string/lbl_my_attention"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.simple"/>
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>
